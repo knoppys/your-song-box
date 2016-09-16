@@ -1,0 +1,534 @@
+/*
+Theme Name: Your Song Box
+Theme URI: http://www.knoppys.co.uk;
+Author: Knoppys Digital Limited
+Author URI: www.knoppys.co.uk
+Description: Our own general purpose wordpress theme
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+.login {
+    display: table-cell;
+    padding: 20% 15%;
+    text-align: center;
+}
+.grid-item { 
+    width: 200px; 
+    padding:10px; 
+}
+.uploadform {
+    display: none;
+}
+.author .track-row img {
+    padding: 0;
+    position: relative;
+}
+.user-grid-item { 
+    width: 300px; 
+    padding:10px; 
+}
+#fep-menu .fep-button:hover, .fep-button-active {
+    background: #ccc none repeat scroll 0 0;
+    color: #444 !important;
+    font-size: 14px;
+}
+#fep-menu .fep-button, .fep-button, .fep-button-active {
+    background: #444 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff !important;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px 16px;
+    text-decoration: none !important;
+}
+.login * {
+    color: #fff !important;
+}
+.login .btn {
+    border-radius: 0;
+    font-size: 16px;
+    width: 200px;
+}
+span.addnew {
+    background: #444;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin: 10px 0;
+}
+span.addnew i {
+    color: #fff;
+    position: relative;
+    top: 1px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+label {
+    text-align: left;
+}
+.overlay-play {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    font-size: 42px;
+    left: 15px;
+    opacity: 0;
+    padding: 33% 0;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    top: 0;
+    transition: all 0.2s ease-in-out 0s;
+}
+.play:hover > .overlay-play {
+   opacity: 1;
+}
+.overlay-play i {
+    color: #fff;
+}
+.content-area * {
+    color: #444;
+}
+.user-container .btn {
+    display: block;
+}
+.user-container {
+    margin-bottom: 20px;
+}
+
+.login .btn:last-of-type {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.signup .form-control {
+    color: #000 !important;
+}
+
+.header-login #loginform {
+    background: inherit;
+    width: 100%;
+}
+.play-music i {
+    color: #fff !important;
+    font-size: 20px;
+    padding-right: 10px;
+}
+#fep-menu .fep-button, .fep-button, .fep-button-active {
+    background: #444 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px 16px;
+    text-decoration: none !important;
+}
+.play-music {
+    display: block;
+    width: 100%;
+    background: red;
+    color: #fff !important;
+    padding: 9px 5px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.header-login .btn {
+    line-height: 1;
+    margin-top: 4px;
+    width: 100%;
+}
+.play-event {
+    background: #3b5998 none repeat scroll 0 0;
+}
+.count-box {
+    display: none !important;
+}
+.wpulike.wpulike-default {
+    width: 100%;
+}
+.counter a {
+    line-height: 1.5em !important;
+    margin: 6px 0 !important;
+    text-align: center;
+    width: 100%;
+}
+
+.sharelinks i {
+    display: block;
+    font-size: 15px;
+    width: 24px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 16px;
+    margin: 6px 0;
+}
+.sharelinks i.fa-facebook {
+    background: #3b5998;
+    color: #fff;
+}
+.sharelinks .apply-now .btn {
+    background: #dfdfdf none repeat scroll 0 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 0.25em;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: #777;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.75em;
+    margin-top: 6px;
+    max-height: 25px;
+    padding: 5px 0;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease 0s;
+    vertical-align: middle;
+    width: 100%;
+}
+.sharelinks .apply-now .btn:hover  {
+    background-color: #bdc3c7;
+    border-color: #95a5a6;
+    color: #eee;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+.sharelinks i.fa-twitter {
+    background: #4099ff;
+    color: #fff;
+}
+.sharelinks i.fa-google {
+    background: #D84B37;
+    color: #fff;
+}
+.sharelinks i.fa-location-arrow {
+    background: green;
+    color: #fff;
+}
+.signup {
+    display: none;
+}
+.header-login p {
+    color: #fff;
+}
+.header-login * {
+    color: #555;
+}
+.content-area .container * {
+    color: #f4f4f4;
+}
+.archive-image {
+    height: auto;
+    width: 100% !important;
+}
+.content-area .container {
+    border-radius: 18px 18px 0 0;
+}
+.user-container strong {
+    line-height: 4;
+}
+
+.track img {
+    height: auto;
+    width: 100%;
+}
+.user-container img {
+    width: 100%;
+    height: auto;
+}
+
+.user-container {
+    border: 1px solid #d2d2d2;
+    padding:10px;
+    background:#d2d2d2;
+}
+
+img {
+    border-radius: 4px;
+}
+
+.col-sm-2.grenreslist > ul {
+    padding: 0;
+}
+.col-sm-2.grenreslist > ul li {
+    list-style: outside none none;
+}
+
+.btn.btn-primary {
+    color: #fff;
+}
+.section-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 21px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+.header-search button {
+    color: #444;
+}
+.sidebar {
+    background: #555 none repeat scroll 0 0;
+    border-radius: 0 10px;
+    padding-top: 15px;
+}
+.header-search input {
+    border-radius: 25px !important;
+    margin: 25px !important;
+}
+.content-area * {
+    color: #444;
+}
+.header {
+    background: #232c32 none repeat scroll 0 0;
+    color: #fff;
+}
+.logo img {
+    max-width: 320px;
+}
+.footer-login img {
+    border-radius: 100%;
+    display: block;
+    max-width: 150px;
+    width: 100%;
+}
+.sidebar-left {
+    background: #232c32 none repeat scroll 0 0;
+}
+.sidebar-left a {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+.row.footer-login > img {
+    border-radius: 100%;
+    max-width: 50%;
+}
+.menu-item {
+    color: #fff;
+    list-style: outside none none;
+    padding: 10px;
+}
+.footer-login {
+    bottom: 0;
+    padding-bottom: 133px;
+    position: absolute;
+    width: 100%;
+}
+.sidebar-left-content {
+    display: block;
+    height: 87vh;
+}
+#menu-primary {
+    background: #313a40 none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 8%;
+}
+.current-menu-item {
+    background: #232c32 none repeat scroll 0 0;
+}
+#menu-primary i {
+    color: #fff;
+    text-align: center;
+    width: 25px;
+}
+
+#loginform label {
+    color: #fff;
+    display: block;
+    font-weight: normal;
+}
+#loginform {
+    background: #313a40 none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 10px;
+    width: 90%;
+}
+
+.sidebar-right {
+    background: #d2d2d2 none repeat scroll 0 0;
+}
+.sidebar-right .widget {
+    background: #313a40 none repeat scroll 0 0;
+    border-radius: 4px;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+.sidebar-right .widget * {
+    color: #fff !important;
+    padding-top: 0;
+}
+
+.sidebar-left-content ul {
+    padding: 10px;
+}
+.sidebar-left-content li {
+    list-style: outside none none;
+    padding-bottom: 10px;
+}
+
+.sectionreplace h2, .widgettitle {
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.registrationform input {
+    width: 50%;
+    max-width: 320px;
+    min-width: 300px;
+}
+
+.registrationform li {
+    list-style: none;
+    padding: 0;
+}
+
+.registrationform ul {
+    padding: 0;
+}
+
+.registrationform .field {
+    padding: 6px 0;
+}
+
+.registrationform * {
+    color: #fff;
+    font-size: 14px;
+}
+
+.registrationform {
+}
+
+.registrationform .hndle span {
+    font-size: 29px !important;
+}
+
+.registrationform input {
+    color: #000 !important;
+}
+.wpulike-heart .counter a.image, .wpulike-heart .counter a.image-unlike, #buddypress .activity-content .wpulike-heart .counter a.image, #buddypress .activity-content .wpulike-heart .counter a.image-unlike, #bbpress-forums .bbp-reply-content .wpulike-heart .counter a.image, #bbpress-forums .bbp-reply-content .wpulike-heart .counter a.image-unlike {
+    border: none;
+    box-shadow: none;
+    background-image: url(../img/icons/add-heart-16.png)!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    padding: 13px 20px!important;
+    border-right: 1px solid #E0E0E0;
+}
+.playbutton {
+    width: 100%;
+    background: #82b440;
+    border: none;
+    padding: 4px;
+    box-shadow: 2px 2px 5px #000;
+    transition: all 0.3s ease-in-out;
+}
+.track-row {
+    padding: 20px 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+a.wp_ulike_btn.image {
+}
+.edit-form {
+    position: absolute;
+    top: 20px;
+    width: 75%;
+    background: #337ab7;
+    bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+.playbutton:hover {
+    background: #82b440;
+    color: #fff !important;
+    box-shadow: none;
+}
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 0px;
+}
+.track-row img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.track-row .btn {
+    margin-bottom: 5px;
+}
+.user-profile img {
+    width: 100%;
+}
+.track {
+    margin-bottom: 20px;
+}
+.user-profile {
+    padding: 22px;
+}
+.sidebar-wrapper {
+    background: #000 none repeat scroll 0 0;
+    height: 100%;
+    left: 250px;
+    margin-left: -250px;
+    overflow-y: auto;
+    position: fixed;
+    transition: all 0.5s ease 0s;
+    width: 16%;
+    z-index: 1000;
+}
+.content-wrapper {
+    left: 15%;
+    position: absolute;
+    width: 85%;
+}
+body {
+    padding-top: 106px;
+}
+body, html {
+  height: 100%;
+}
+.track-image img {
+    width: 100%;
+    height: auto;
+}
+.row.track-controls {
+    padding: 10px 0;
+}
+.wpulike {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    line-height: 1;
+    margin: 0;
+}
+.row.more-by-item {
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    line-height: 2;
+}
+.more-by-item .playbutton {
+    width: 46px;
+    margin-right: 20px;
+}
+.grid-item img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-dropdown {
+    display:none;
+}
