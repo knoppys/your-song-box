@@ -59,6 +59,10 @@ jQuery(document).ready(function(){
 	            dataType:'json',
 	            success:function(data){	          	
 	            console.log(data);
+	            jQuery('.form-dropdown').fadeOut('slow').promise().done(function(){
+	            	jQuery('.success').fadeIn('slow');
+	            });
+	            
 
 			    }
 			});
@@ -92,3 +96,37 @@ jQuery(document).ready(function(){
 		}
 	})
 })
+
+
+
+jQuery(document).ready(function(jQuery) {
+    var jQuerymainContent = jQuery("#menu-primary"),
+        siteUrl = "http://" + top.location.host.toString(),
+        url = ''; 
+
+    jQuery(document).delegate("a[href^='"+siteUrl+"']:not([href*=/wp-admin/]):not([href*=/wp-login.php]):not([hrefjQuery=/feed/])", "click", function() {
+        location.hash = this.pathname;
+        return false;
+    }); 
+
+    jQuery("#searchform").submit(function(e) {
+        location.hash = '?s=' + jQuery("#s").val();
+        e.preventDefault();
+    }); 
+
+    jQuery(window).bind('hashchange', function(){
+        url = window.location.hash.substring(1); 
+
+        if (!url) {
+            return;
+        } 
+
+        url = url + " #sectionreplace"; 
+
+        jQuerymainContent.animate({opacity: "0.1"}).html('&lt;p&gt;Please wait...&lt;/&gt;').load(url, function() {
+            jQuerymainContent.animate({opacity: "1"});
+        });
+    });
+
+    jQuery(window).trigger('hashchange');
+});

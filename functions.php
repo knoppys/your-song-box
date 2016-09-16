@@ -79,8 +79,8 @@ register_nav_menus( array(
 		'id'            => 'sidebar-right',
 		'description'   => '',
 	    'class'         => '',
-		'before_widget' => '<div id="%1$s" class="col-sm-12 widget %2$s">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div id="%1$s" class="col-sm-2 widget %2$s"><div class="widget-container">',
+		'after_widget'  => '</div></div>',
 		'before_title'  => '<h4 class="widgettitle">',
 		'after_title'   => '</h4>' 
 	); 
@@ -405,11 +405,11 @@ function addmusicajax() {
 				'track_image' => $trackcover		
 		  	)
 		);
-		 $pid = wp_insert_post( $newmusic );
-       	 wp_set_post_terms($pid, $_POST['genre'], 'genre', true); // inserts genre to the track
-
-		echo 'Succesfully submitted [Knoppys Development Message]';
-		die();			
+		$pid = wp_insert_post( $newmusic );
+		wp_set_post_terms($pid, $_POST['genre'], 'genre', true); // inserts genre to the track
+		
+		die();	
+				
 		}
 
 add_action('wp_ajax_addmusicajax', 'addmusicajax');

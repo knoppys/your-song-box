@@ -1,4 +1,4 @@
-<div class="col-sm-10" id="sectionreplace">
+<div class="col-sm-12" id="sectionreplace">
 
     <div class="row">
         <div class="col-md-12">
